@@ -1,0 +1,383 @@
+/* ==============================
+    全体
+============================== */
+body {
+    font-family: Arial, "メイリオ";
+    color: #333;
+}
+
+.cf::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ==============================
+    モバイル用
+============================== */
+
+/* ==============================
+    モバイル用 ヘッダー
+============================== */
+header {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 img {
+    width: 100%;
+    max-width: 90px;
+    height: auto;
+}
+
+/* ==============================
+    モバイル用 メイン画像
+============================== */
+div.mainimage {
+    width: 100%;
+    height: 280px;
+    background: url(../img/sp_mv.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* ==============================
+    ラッパー
+============================== */
+div.wrapper {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+}
+
+/* ==============================
+    モバイル用 ニュース
+============================== */
+div.news_wrapper {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+h2.news_title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #007BFF;
+    text-align: center;
+}
+
+h2.news_title span {
+    font-size: 12px;
+    color: #333;
+    display: block;
+    margin-top: 5px;
+}
+
+div.news_content li {
+    border-bottom: 1px solid #EDEDED;
+}
+
+div.news_content dl {
+    padding-bottom: 15px;
+}
+
+div.news_content dl dt, div.news_content dl dd {
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+div.news_content dl dd {
+    line-height: 23px;
+}
+
+/* ==============================
+    モバイル用 ビジョン
+============================== */
+div.vision_wrapper {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    margin-top: 60px;
+}
+
+div.vision_image img {
+    width: 100%;
+    height: auto;
+}
+
+div.vision_content {
+    margin-top: 20px;
+}
+
+h3.vision_title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #007BFF;
+}
+
+div.vision_content p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-top: 15px;
+}
+
+/* ==============================
+    モバイル用 サービス
+============================== */
+div.service_wrapper {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    margin-top: 60px;
+}
+
+h2.service_title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #007BFF;
+    text-align: center;
+}
+
+h2.service_title span {
+    font-size: 12px;
+    color: #333;
+    display: block;
+    margin-top: 5px;   
+}
+
+div.service ul li {
+    margin-top: 30px;
+}
+
+div.service ul li:first-of-type {
+    margin-top: 20px;
+}
+
+div.service ul li img {
+    width: 100%;
+    height: auto;
+}
+
+div.service ul li p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+}
+
+div.service a.service_link {
+    max-width: 180px;
+    height: auto;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #007BFF;
+
+    padding: 20px 0;
+    border-radius: 30px;
+    display: block;
+    text-align: center;
+    margin: 30px auto 0 auto;
+}
+
+/* ==============================
+    フッダー
+============================== */
+footer {
+    width: 100%;
+    height: 62px;
+    background-color: #1F1F1F;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 11px;
+    color: #7B7B7B;
+    text-align: center;
+    line-height: 62px;
+}
+
+@media (min-width: 600px) {
+    /* ==============================
+        ヘッダー
+    ============================== */
+    header {
+        height: 90px;
+    }
+
+    header h1 img {
+        max-width: 120px;
+    }
+
+    /* ==============================
+        メイン画像
+    ============================== */
+    div.mainimage {
+        width: 100%;
+        height: 560px;
+        background: url(../img/pc_mv.jpg) no-repeat center;
+        background-size: cover;
+    }
+
+    /* ==============================
+        ニュース
+    ============================== */
+    div.news_wrapper {
+        margin-top: 80px;
+    }
+
+    div.news {
+        width: 100%;
+        max-width: 760px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    h2.news-title {
+        font-size: 32px;
+    }
+
+    h2.news_title span {
+        font-size: 13px;
+        margin-top: 8px;
+    }
+
+    div.news_content {
+        margin-top: 30px;
+    }
+
+    div.news_content ul li {
+        padding: 21px 0;
+    }
+
+    div.news_content dl {
+        padding: 0;
+        line-height: 27px;
+        display: flex;
+    }
+
+    div.news_content dl dt, div.news_content dl dd {
+        font-size: 15px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    div.news_content dl dd {
+        margin-left: 47px;
+        line-height: 27px;
+    }
+
+    /* ==============================
+        ビジョン
+    ============================== */
+    div.vision_wrapper {
+        padding: 0;
+    }
+
+    div.vision {
+        display: flex;
+        /* justify-content: space-between; */
+    }
+
+    div.vision_image img {
+        width: 100%;
+        max-width: 720px;
+        height: auto;
+    }
+
+    div.vision_content {
+        width: 100%;
+        max-width: 639px;
+        margin: 0;
+        padding: 0 80px 0 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h3.vision_title {
+        font-size: 32px;
+        font-weight: 600;
+        color: #007BFF;
+    }
+
+    div.vision_content p {
+        width: 100%;
+        max-width: 569px;
+        font-size: 16px;
+        font-weight: 300;
+        margin-top: 30px;
+    }
+
+    /* ==============================
+        サービス
+    ============================== */
+    div.service_wrapper {
+        margin-top: 100px;
+    }
+
+    h2.service_title {
+        font-size: 32px;
+    }
+
+    h2.service_title span {
+        font-size: 13px;
+        margin-top: 8px;
+    }
+
+    div.service_wrapper ul {
+        min-width: 1110;
+        margin: 30px auto 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    div.service_wrapper ul li {
+
+        margin-top: 0;
+        margin-left: 30px;
+    }
+
+    div.service_wrapper ul li:first-child {
+
+        margin-top: 0;
+    }
+
+    div.service_wrapper ul li img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    div.service_wrapper ul li p {
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 15px;
+    }
+
+    div.service a.service_link {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        font-size: 15px;
+        margin: 40px auto 0 auto;
+    }
+
+    /* ==============================
+        フッター
+    ============================== */
+    footer {
+        height: 92px;
+        margin-top: 80px;
+    }
+    
+    footer p {
+        font-size: 12px;
+        line-height: 92px;
+    }
+}
