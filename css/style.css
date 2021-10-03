@@ -117,6 +117,7 @@ h3.vision_title {
     font-size: 24px;
     font-weight: 600;
     color: #007BFF;
+    line-height: 36px;
 }
 
 div.vision_content p {
@@ -304,6 +305,7 @@ footer p {
         font-size: 32px;
         font-weight: 600;
         color: #007BFF;
+        line-height: 48px;
     }
 
     div.vision_content p {
